@@ -1,0 +1,18 @@
+[package]
+name = "bls-ed25519-benches"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bls-signatures = { git = "https://github.com/samkim-crypto/bls-signatures" }
+ed25519-dalek = "1.0.1"
+
+[dev-dependencies]
+rand = "0.7"
+criterion = "0.3"
+
+[[bench]]
+name = "benches"
+harness = false
